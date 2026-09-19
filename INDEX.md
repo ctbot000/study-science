@@ -22,7 +22,7 @@ _No notes yet._
 
 ## physics
 
-_No notes yet._
+- [Speed at a given height depends on launch speed and height, not launch direction](notes/physics/speed-depends-on-height-not-launch-direction.md) — Only the magnitude of $v_0$ enters $\tfrac12 mv_0^2 + mgh$, so up, down and sideways throws arrive at the same speed. `energy`, `kinematics`, `projectile`
 
 ## method
 
