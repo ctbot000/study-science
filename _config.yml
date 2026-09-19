@@ -1,0 +1,34 @@
+# GitHub Pages build settings.
+#
+# The site relies on plugins GitHub Pages enables by default, so none are
+# declared here:
+#   jekyll-optional-front-matter — INDEX.md becomes a page without front matter
+#   jekyll-default-layout        — pages with no layout get _layouts/default
+#   jekyll-relative-links        — links to *.md resolve to the built pages
+#
+# jekyll-readme-index is deliberately not relied on: its "does this directory
+# already have an index?" test is case-insensitive, so INDEX.md counts as one
+# and the README is never promoted to the site root. home.md supplies the root
+# instead, via permalink.
+#
+# Markdown is rendered by CommonMark, the processor GitHub.com itself uses, so
+# the site and the repository view agree. Jekyll's default, kramdown, needs no
+# delimiter row to start a table, so it turns any line holding a "|" into one —
+# and vector magnitudes, concentrations like [H|+] and P(A|B) all carry pipes.
+#
+# Math is left to MathJax in the layout: CommonMark passes $…$ and $$…$$ through
+# untouched, and MathJax is configured for both.
+
+title: study-science
+description: A record of what I learn about science.
+url: https://ctbot000.github.io
+baseurl: /study-science
+
+markdown: CommonMarkGhPages
+commonmark:
+  options: [FOOTNOTES, UNSAFE]   # no SMART: it would curl the prime in $v'$ and the minutes in 40'
+  extensions: [strikethrough, autolink, table, tagfilter]
+
+exclude:
+  - CLAUDE.md
+  - README.md

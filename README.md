@@ -6,6 +6,8 @@ The point is the record, not the studying. An explanation that made sense once i
 forgotten in a week; the mechanism behind it, written down, is not. So each note
 is kept short enough to reread, and long enough to rebuild the idea from.
 
+The notes are published at <https://ctbot000.github.io/study-science/>.
+
 ## Layout
 
 - [`INDEX.md`](INDEX.md) — one line per note. Scan this first.

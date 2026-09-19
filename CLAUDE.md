@@ -20,6 +20,10 @@ session can be interrupted, and an unwritten note is a lost one.
 - `INDEX.md` — one line per note, grouped by area. This is what gets read first,
   so the hook has to say what the note is actually good for.
 - `notes/<area>/<topic>.md` — one idea per file.
+- `_config.yml`, `_layouts/default.html`, `home.md` — the GitHub Pages site at
+  <https://ctbot000.github.io/study-science/>. Asked for, so it is the one
+  exception to "no build tooling" above; leave it in place. Adding a note needs
+  no change here — it is published on the next push to `main`.
 
 Areas: `astronomy`, `biology`, `chemistry`, `earth-science`, `physics`,
 `method` (measurement, experiment design, how a claim gets established). Add a
